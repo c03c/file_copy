@@ -19,7 +19,7 @@ void init_console()
     dwMode |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;
     SetConsoleMode(hOut, dwMode);
 
-    // 设置控制台输出为 UTF-8
+    // 设置控制台输出为 UTF-8  保证中文准确输出
     SetConsoleOutputCP(CP_UTF8);
 #endif
 }
